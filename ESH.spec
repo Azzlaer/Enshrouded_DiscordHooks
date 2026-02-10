@@ -2,11 +2,11 @@
 
 
 a = Analysis(
-    ['main.py'],
+    ['monitor.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[('config.ini', '.'), ('logo.ico', '.'), ('enshrouded.db', '.')],
+    hiddenimports=['requests', 'sqlite3', 'pathlib'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
